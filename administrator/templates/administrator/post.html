@@ -1,0 +1,7 @@
+{% extends "stores/header.html" %}
+{% block content %}
+    <h3>{{post.title}}</h3>
+    <h6>on {{post.summary}}</h6>
+    {{post.platform|safe|linebreaks}}
+    <!--safe means it can render items in html tag-->
+{% endblock %}

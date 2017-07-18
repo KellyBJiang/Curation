@@ -1,0 +1,6 @@
+{% extends "stores/header.html" %}
+{% block content %}
+    {% for users in object_list %}
+        <h5>{{users.name}}<a href = "/administrator/{{users.id}}"> {{users.name}}</a></h5>
+    {% endfor %}
+{% endblock %}

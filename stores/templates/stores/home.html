@@ -1,0 +1,91 @@
+{% extends "stores/header.html" %}
+
+{% block content %}
+
+    <h1>Curators</h1>
+    {% for c in content %}
+        <p>{{c}}</p>
+    {% endfor %}
+
+
+
+
+
+<!--
+<h1>
+    Curation: keyword
+</h1>
+<h3>
+    AGO4 Regulates Entry into Meiosis and Influences Silencing of Sex Chromosomes in the Male Mouse Germline
+</h3>
+	<div class="row">
+	    <div class="col-sm-6">
+            <table class="table table-bordered" style = " background-color:#fefefe">
+                <tr>
+                    <td>RBP</td>
+                    <td>Ago2</td>
+                </tr>
+                <tr>
+                    <td>Accession</td>
+                    <td>GSE39652</td>
+                </tr>
+                <tr>
+                    <td>#Samples</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Platforms</td>
+                    <td>GPL15103;GPL9250</td>
+                </tr>
+                <tr>
+                    <td>Organism</td>
+                    <td>Mus musculus</td>
+                </tr>
+                <tr>
+                    <td>Experiment type</td>
+                    <td>Expression profiling by high throughput sequencing; Non-coding RNA profiling by high throughput sequencing</td>
+                </tr>
+                <tr>
+                    <td>Summary</td>
+                    <td>The four mammalian Argonaute family members are thought to share redundant functions in the microRNA pathway, yet only AGO2 possesses the catalytic "slicer" function required for RNA interference. Whether AGO1, AGO3, or AGO4 possess specialized functions remains unclear. Here, we Series_summary = show that AGO4 localizes to spermatocyte nuclei during meiotic prophase I, specifically at sites of asynapsis and in the transcriptionally silenced XY sub-domain, the sex body. We generated Ago4 knockout mice and show that Ago4-/- spermatogonia initiate meiosis early, resulting from premature induction of retinoic acid-response genes. During prophase I, the sex body assembles incorrectly in Ago4-/- mice, leading to disrupted meiotic sex chromosome inactivation (MSCI). This is associated with a dramatic loss of microRNAs, &gt;20% of which arise from the X chromosome. Loss of AGO4 results in increased AGO3 in spermatocytes, indicating some degree of redundancy. Thus, AGO4 regulates meiotic entry and MSCI in mammalian germ cells, implicating small RNA pathways in these processes.</td>
+                </tr>
+            </table>     
+		</div>
+		<div class="col-sm-5">
+		    <div class="container">
+		        <iframe style="height:500px; width:70%" src="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE39652">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+    		    <h4>
+    		        Is this gene revelant to the keyword or not?
+    		    </h4>
+    		    <form>
+                    <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                </form> 
+            
+                <div class="form-group" >
+                      <label for="comment">Comment:</label>
+                      <textarea class="form-control" rows="3" id="comment" style="width:50%"></textarea>
+                </div>
+            </div>
+		</div>
+	</div>
+			  
+-->
+
+
+
+
+<!--
+<p>
+   GEO Original webpage
+</p>
+
+<iframe style="height:500px; width:70%" src="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE39652">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+-->
+
+{% include "stores/includes/htmlsnippet.html" %}
+{% endblock %}
